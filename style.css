@@ -1,0 +1,111 @@
+/* ===== COLOR THEME (GREYISH LIGHT GREEN) ===== */
+:root{
+    --bg-main:#f4f7f5;        /* greyish white */
+    --hero-bg:#e6efe9;        /* light sage green */
+    --nav-bg:#ffffff;         /* clean white */
+    --card-bg:#ffffff;        /* cards */
+    --accent:#5f7f6e;         /* muted green */
+    --text-main:#374151;      /* soft dark grey */
+    --footer-bg:#e6efe9;      /* same as hero */
+}
+
+/* ===== BASE ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:var(--bg-main);
+    color:var(--text-main);
+}
+
+/* ===== HERO / HEADER ===== */
+.hero{
+    background:var(--hero-bg);
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    color:var(--accent);
+}
+
+.hero p{
+    margin-top:12px;
+    font-size:16px;
+    color:#4b5563;
+}
+
+/* ===== NAV ===== */
+nav{
+    background:var(--nav-bg);
+    padding:14px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+nav a{
+    margin:0 12px;
+    text-decoration:none;
+    color:var(--accent);
+    font-weight:500;
+}
+
+/* ===== SECTIONS ===== */
+.section{
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:var(--accent);
+}
+
+/* ===== PROFILE CARD ===== */
+.profile{
+    background:var(--card-bg);
+    border-radius:22px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid var(--hero-bg);
+    margin-bottom:20px;
+}
+
+/* ===== GRID / CARDS ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:24px;
+}
+
+.box{
+    background:var(--card-bg);
+    padding:24px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 22px rgba(0,0,0,0.06);
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:var(--footer-bg);
+    text-align:center;
+    padding:18px;
+    color:var(--accent);
+    font-size:14px;
+}
